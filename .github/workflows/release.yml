@@ -21,6 +21,7 @@ jobs:
           export GOBIN=$(go env GOPATH)/bin
           export PATH=$PATH:$GOPATH
           export PATH=$PATH:$GOBIN
+          mkdir -p $GOBIN
           go get -v -t -d ./...
           curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
           dep ensure
