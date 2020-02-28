@@ -2,7 +2,10 @@ package main
 
 import "os"
 
-const Version string = "v0.2.0"
+// These variables are set in build step
+var (
+	Version = "unset"
+)
 
 func main() {
 	cli := &CLI{outStream: os.Stdout, errStream: os.Stderr}
