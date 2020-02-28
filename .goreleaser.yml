@@ -25,3 +25,14 @@ archives:
         format: zip
 release:
   prerelease: auto
+scoop:
+  bucket:
+    owner: kyoshidajp
+    name: scoop-gh
+  commit_author:
+    name: kyoshidajp
+    email: claddvd@gmail.com
+  homepage: https://github.com/kyoshidajp/ghkw
+  skip_upload: auto
+  description: Search how many keywords in GitHub Code tool
+  license: MIT
